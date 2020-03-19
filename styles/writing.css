@@ -1,0 +1,132 @@
+html, body {
+  height: 100%;
+  background: #42455a
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: garamond;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: #42455a;
+}
+
+.menu ul {
+  display: inline-flex;
+  margin: 50px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+
+.easter_egg img {
+  width: 30px;
+  margin-top: -4px;
+  margin-right: 50px;
+}
+
+.active {
+  color: #19dafa !important;
+}
+
+.github-link {
+  top: 35px;
+  right: 60px;
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#42455a, #42455a),
+    radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.github-link span {
+  display: block;
+  padding: 4px 18px;
+}
+
+.banner {
+  width: 80%;
+  height: 70%;
+  top: 25%;
+  left: 120px;
+  right: 120px;
+  position: absolute;
+  color: #fff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 40px;
+  font-size: 80px;
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: center;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: center;
+  width: 25%;
+  padding-left: 40px;
+}
+
+/* image */
+.img {
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: auto;
+  padding: 40px;
+  background-size: contain;
+}
+
+/*card effect for articles */
+.card {
+  padding: 40px;
+  margin-top: 10px;
+  margin-left: 15%;
+  border-radius: 25px;
+  color: #b2b1b1;
+  background: #5a4245;
+}
+.card h2 {
+  font-size: 40px;
+}
+
+.card h5 {
+  font-size: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 40px;
+  }
+}
